@@ -50,7 +50,8 @@ if (!isset($_SESSION['panier'])){
             <div class="article">
                 <tr>
                 <td><?= $product['name'];?></td>
-                <td><?=$subtotal ;?>€</td>
+                <br>
+                <td>Prix:<?=$subtotal ;?>€</td>
             </tr>
             <br>
             </div>       
@@ -64,7 +65,7 @@ if (!isset($_SESSION['panier'])){
     
     ?>
     </div>
-    <a href="reinit.php">
+    <a class="vider" href="reinit.php">
         <p>VIDER LE PANIER</p>
     </a>
    </main>
