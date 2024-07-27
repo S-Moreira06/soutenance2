@@ -21,10 +21,10 @@ $produits = array(
         "price" => 5.07,
     ), array(
         "id" => 3,
-        "name" => "Reinchu",
-        "overview" => "Donnez lui ses medicaments avant qu'il ne fasse fuhrer !",
-        "image" => "https://pbs.twimg.com/media/FyMVdJBXgAQWp58.jpg",
-        "price" => 39.45,
+        "name" => "MewThree",
+        "overview" => "Légerment blazer et... bah je sais pas en faite, c'est qui lui ?",
+        "image" => "https://qph.cf2.quoracdn.net/main-qimg-42ef921d7e3f136717e464a3d624f3cd-lq",
+        "price" => 40.40,
     ), array(
         "id" => 4,
         "name" => "Grokayou",

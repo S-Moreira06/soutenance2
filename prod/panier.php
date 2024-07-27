@@ -1,3 +1,4 @@
+
 <?php 
 include 'produits.php';
 session_start();
@@ -23,22 +24,27 @@ if (!isset($_SESSION['panier'])){
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="styleSteph.css">
+    <link rel="stylesheet" href="pokelove.css">
 </head>
 <body>
-   <header>
+   <header id="S">
        <img src="https://i.pinimg.com/originals/b1/36/c1/b136c15d14630cafa92c3dc35d53799d.jpg" alt="LOGO">
-       <ul>
-          <a href="index.php">
+       <h1 id="title2">
+        <p><i> POKELOVE </i><p>
+    </h1>
+    <ul class="lien3">
+          <a id="lien" href="index.php" style="text-decoration:none">
               <li>Accueil</li>
           </a>
-           <a href="panier.php">
+    </ul>
+    <ul class="lien4">
+           <a id="lien2" href="panier.php" style="text-decoration:none">
                <li>Panier</li>
            </a>
-       </ul>
+        </ul>
    </header>
    <main>
-        <h1>PANIER</h1>
+        <center><h1 id="pan">PANIER</h1></center>
         <div class="bloc">
     <?php 
 
@@ -48,25 +54,25 @@ if (!isset($_SESSION['panier'])){
             $total = $total + $subtotal;
             ?>
             <div class="article">
-                <tr>
+            <tr>
                 <td><?= $product['name'];?></td>
                 <br>
                 <td>Prix:<?=$subtotal ;?>€</td>
             </tr>
-            <br>
+            <img class="minipic" src="<?=$product['image']?>" alt="">
             </div>       
             
         
         <?php }
             
 
-       echo '<b>Total : '.$total.'Euros</b><br>';           
+       echo '<center><b>Total : '.$total.'Euros</b></center><br>';           
         
     
     ?>
     </div>
     <a class="vider" href="reinit.php">
-        <p>VIDER LE PANIER</p>
+        <p>VIDER LE PANIER</p><br>
     </a>
    </main>
    <footer>
